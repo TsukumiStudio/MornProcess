@@ -6,7 +6,7 @@ using System.Threading;
 using Cysharp.Threading.Tasks;
 using UnityEngine;
 
-namespace MornProcess
+namespace MornLib
 {
     public sealed class MornProcess : IDisposable
     {

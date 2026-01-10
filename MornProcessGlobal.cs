@@ -1,6 +1,4 @@
-using MornGlobal;
-
-namespace MornProcess
+namespace MornLib
 {
     internal sealed class MornProcessGlobal : MornGlobalPureBase<MornProcessGlobal>
     {
