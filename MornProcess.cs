@@ -52,7 +52,7 @@ namespace MornLib
             await UniTask.WaitUntil(() => _process.HasExited, cancellationToken: ct);
             var output = await _process.StandardOutput.ReadToEndAsync();
             var result = output.TrimEnd('\n');
-            MornProcessGlobal.Log($"コマンド: {_process.StartInfo.FileName} {command}\n実行結果: {result}");
+            MornProcessGlobal.Logger.Log($"コマンド: {_process.StartInfo.FileName} {command}\n実行結果: {result}");
             return result;
         }
 
