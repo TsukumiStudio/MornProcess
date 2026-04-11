@@ -1,28 +1,32 @@
 # MornProcess
 
+<p align="center">
+  <img src="src/Editor/MornProcess.png" alt="MornProcess" width="640" />
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/github/license/TsukumiStudio/MornProcess" alt="License" />
+</p>
+
 ## 概要
 
-OSプロセス実行ラッパー。ビルドやツール実行を非同期で管理するライブラリ。
+OS プロセス実行を非同期で扱うラッパーライブラリ。git やビルドツール等の外部コマンドを UniTask で待機できる。
 
-## 依存関係
+## 導入方法
 
-| 種別 | 名前 |
-|------|------|
-| 外部パッケージ | UniTask |
-| Mornライブラリ | MornLib |
+Unity Package Manager で以下の Git URL を追加:
 
-## 使い方
-
-### Assetsディレクトリから実行
-
-```csharp
-var process = MornProcess.CreateAtAssets("git");
-var output = await process.ExecuteAsync("status", ct);
+```
+https://github.com/TsukumiStudio/MornProcess.git?path=src#1.0.0
 ```
 
-### 相対パスから実行
+`Window > Package Manager > + > Add package from git URL...` に貼り付けてください。
 
-```csharp
-var process = MornProcess.CreateAtAssetsRelative("Tools", "mybuild.exe");
-var result = await process.ExecuteAsync("--build", ct);
-```
+### 依存パッケージ
+
+- [UniTask](https://github.com/Cysharp/UniTask) (`com.cysharp.unitask`)
+- [MornGlobal](https://github.com/TsukumiStudio/MornGlobal) (`com.tsukumistudio.mornglobal`)
+
+## ライセンス
+
+[The Unlicense](LICENSE)

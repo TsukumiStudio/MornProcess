@@ -1,0 +1,21 @@
+{
+  "name": "com.tsukumistudio.mornprocess",
+  "version": "1.0.0",
+  "displayName": "MornProcess",
+  "description": "OS プロセス実行を非同期で扱うラッパーライブラリ。git やビルドツール等の外部コマンドを UniTask で待機できる。",
+  "unity": "6000.0",
+  "license": "Unlicense",
+  "author": {
+    "name": "TsukumiStudio"
+  },
+  "keywords": [
+    "process",
+    "async",
+    "shell",
+    "command",
+    "tool"
+  ],
+  "dependencies": {
+    "com.tsukumistudio.mornglobal": "1.0.0"
+  }
+}
